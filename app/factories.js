@@ -31,3 +31,23 @@ countriesApp.factory('getCountryData', ['$http', function($http) {
         })
     }
 }])
+
+.factory('getCapitalPop', ['$http', function($http){
+    return function(countryID, capital){
+        var params = {
+            username: 'rakeshpatel87p',
+            country: countryID,
+            q: capital,
+            name_equals: capital,
+            isNameRequired: true,
+            featureCode: 'PPLC'
+        };
+
+        return $http({
+            url: 'http://api.geonames.org/searchJSON?',
+            method: 'GET',
+            params: params
+        })
+    }
+
+}])
