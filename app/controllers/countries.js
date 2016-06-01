@@ -24,9 +24,3 @@ countriesApp.controller('countriesCtrl', ['getCountryData', '$rootScope', functi
 		$scope.capitalPop = result.data.geonames[0].population;
 	})
 }])
-
-// function massageData(data){
-//     
-
-//     })
-// }
