@@ -1,0 +1,17 @@
+<div class="countryInfo">
+    <div ng-animate-ref="movingTitle">
+        <h1 class="countryName" ng-repeat="x in countryInfo" ng-animate-ref="{{x.countryName}}">{{x.countryName}}</h1>
+    </div>
+    <div ng-repeat="x in countryInfo">
+        <p>Population of Country: {{x.population | number: 0}}</p>
+        <p>Area: {{x.areaInSqKm | number:0}}</p>
+        <p>Capital: {{x.capital}}</p>
+        <p>Population of Capital: {{capitalPop | number:0}}</p>
+    </div>
+    <li>Neighbors: <span ng-repeat="neighbor in neighbors"><a href="#/countries/{{neighbor.countryCode}}">{{neighbor.countryName}}</a></span></li>
+    <br />
+    <img id="flag" src="http://www.geonames.org/flags/x/{{countryCode | lowercase}}.gif" />
+    <img id='myImage' src="http://www.geonames.org/img/country/250/{{countryCode}}.png" />
+</div>
+<button><a href="#/home">Home</a></button>
+<button id="browseOther"><a href="#/countries">Browse Other Countries</a></button>

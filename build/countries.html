@@ -1,1 +1,21 @@
-<a href="#/home">Home</a>
+<table ng-animate-ref="movingTitle">
+    <tbody>
+        <tr>
+            <th>Name</th>
+            <th>Country Code</th>
+            <th>Capital</th>
+            <th>Area in km2</th>
+            <th>Population</th>
+            <th>Continent</th>
+        </tr>
+        <tr ng-repeat="x in countryData">
+            <td><a href="#/countries/{{x.countryCode}}" ng-animate-ref="{{x.countryName}}">{{x.countryName}}</a></td>
+            <td>{{x.countryCode}}</td>
+            <td>{{x.capital}}</td>
+            <td>{{x.areaInSqKm}}</td>
+            <td>{{x.population}}</td>
+            <td>{{x.continent}}</td>
+        </tr>
+    </tbody>
+</table>
+<button><a href="#/home.html ">Home</a></button>
