@@ -1,0 +1,6 @@
+Concepts:
+
+Animation
+	-Loading state when AJax calls are being made
+		-Need to include timeout period to ensure showing of ani
+	-Transitions to smooth view-view hopping
