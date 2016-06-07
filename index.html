@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Countries and Capitals</title>
-    <link rel="stylesheet" href="./_assets/combined-fd17b3b7d4.css"/>
+    <!-- build:css ./_assets/combined.css -->
+    <link rel="stylesheet" href="../css/main.css">
+    <!-- endbuild -->
     <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 </head>
 
@@ -12,10 +14,13 @@
 <hr />
 <div ng-view class="view-animation"></div>
 </body>
-<script src="./_assets/combined-5dbb407079.js"></script>
-
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.5/plugins/CSSPlugin.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.5/easing/EasePack.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.5/TweenLite.min.js"></script>
-<script src="animations.js"></script> -->
+<!-- build:js ./_assets/combined.js -->
+<script type="text/javascript" src="bower_components/angular/angular.js"></script>
+<script type="text/javascript" src="bower_components/angular-route/angular-route.js"></script>
+<script type="text/javascript" src="bower_components/angular-animate/angular-animate.js"></script>
+<script src="controllers/master.js"></script>
+<script src="factories.js"></script>
+<script src="controllers/home.js"></script>
+<script src="controllers/countries.js"></script>
+<!-- endbuild -->
 </html>
