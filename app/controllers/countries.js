@@ -12,7 +12,7 @@ countriesApp.controller('countriesCtrl', ['getCountryData', '$rootScope', functi
 
 	})
 
-	// Based on countryCode, extract the object that contains that value for the country code
+	// it is filtering the objects based on a country code that matches the needed countryCode, provided by routeParams.
 	var countryInfo = $rootScope.countryData.filter(function(obj){
 		return obj.countryCode == $routeParams.countryCode;
 

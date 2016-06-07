@@ -1,1 +1,0 @@
-TweenLite.to(".title", 5, {opacity:1});

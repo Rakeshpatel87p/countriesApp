@@ -2,7 +2,7 @@ var countriesApp = angular.module('countriesApp', ['ngRoute', 'ngAnimate'])
     .config(['$routeProvider', function($routeProvider) {
         $routeProvider
 
-            .when('/', {
+        .when('/', {
             templateUrl: 'home.html',
             controller: 'homeCtrl'
         })
