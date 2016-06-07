@@ -1,3 +1,0 @@
-countriesApp.controller('homeCtrl', function() {
-
-})
